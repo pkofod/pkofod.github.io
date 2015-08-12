@@ -143,7 +143,7 @@ The [RDatasets.jl](https://github.com/johnmyleswhite/RDatasets.jl) package conta
 
 {% highlight julia %}
 
-Pkg.add("Rdataset")
+Pkg.add("RDatasets")
 
 {% endhighlight %}
 
