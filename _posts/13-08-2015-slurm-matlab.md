@@ -25,7 +25,7 @@ Where `job.sh` contains the information to be passed to SLURM. The options for S
 
 ls > my_folder.list
 {% endhighlight %}
-After runing `sbatch`, we would have a file called `my_folder.list` with the contents of the folder we were in. Great stuff. Now let's run a Matlab script (or R, python, Julia, whatever). If we were simply in a terminal, we could do
+After running `sbatch`, we would have a file called `my_folder.list` with the contents of the folder we were in. Great stuff. Now let's run a Matlab script (or R, python, Julia, whatever). If we were simply in a terminal, we could do
 
 {% highlight bash %}
 matlab -nodesktop -r my_script.m
