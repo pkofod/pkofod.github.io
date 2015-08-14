@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Running many similar jobs using SLURM and Matlab
+title: SLURM arrays and Matlab
 author: Patrick Kofod Mogensen
 excerpt: Running many similar jobs on a server with the SLURM queuing software is easy to do - even if you have many parameters to vary!
 ---
