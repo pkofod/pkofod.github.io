@@ -42,7 +42,7 @@ wall << EndOfMessage
 Hello Friends!
 EndOfMessage
 {% endhighlight %}
-`wall` is a linux program that writes a message to all logged on users. What the above example does, is the following: `<< EndOfMessage` tells your computer, that we are going to pass some input to the program `wall`, and it is going to be everything that fellows until we meet the expression `EndOfMessage` if it starts on a new line with no white space around it. The name was chosen by me, and could easily have been `EOM` for short, you just don't want to choose a keyword, which might be used in the particular context - for example `end`. Similarly, we could pass a script to Matlab. Simply write the following.
+`wall` is a linux program that writes a message to all logged on users. What the above example does, is the following: `<< EndOfMessage` tells your computer, that we are going to pass some input to the program `wall`, and it is going to be everything that follows until we meet the expression `EndOfMessage` if it starts on a new line with no white space around it. The name was chosen by me, and could easily have been `EOM` for short, you just don't want to choose a keyword, which might be used in the particular context - for example `end`. Similarly, we could pass a script to Matlab. Simply write the following.
 
 
 {% highlight bash %}
