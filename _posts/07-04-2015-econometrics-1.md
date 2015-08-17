@@ -310,7 +310,7 @@ julia> by(Housing, :AirCo, df->mean(df[:Price]))
 Alternatively, we can use the `do` block form. This time we add a name to the mean, and also calculate the standard deviation. Notice Julia fully supports UTF-8 characters. In Ubuntu I've mapped the "Windows Button + Space" to cycle between my local keyboard layout and Greek keyboard layout. 
 
 {% highlight julia %}
-julia> by(housing, :FullBase) do df
+julia> by(Housing, :FullBase) do df
                    DataFrame(μ = mean(df[:Price]), σ  = std(df[:Price]))
                end
 2x3 DataFrame
