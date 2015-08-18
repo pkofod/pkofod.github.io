@@ -83,3 +83,11 @@ output = mean(A(:, matrix_index)) == 42
 EOF
 {% endhighlight %}
 This time I've added some new things: `--output` and `--array` as options to `sbatch`, `%j`, and `$SLURM_ARRAY_TASK_ID`. I've also omitted the `-nodesktop` option, as the GUI is probably not even installed on the server where you run `sbatch`. The `--output` option adds the possibility for `sbatch` to save the output (of Matlab in this instance) to a file. The `%j%` refers to the job ID given by SLURM to your job. The `--array` option will run our script three times. Each time it runs, it will substitute a value for `$SLURM_ARRAY_TASK_ID`. It will start with 1, then 2, and lastly 3. However, you can not be sure that SLURM will actually run them in that order. Checking the `.out` files, you should be able to see, that the job with `matrix_index == 3` is the only job which returns `output` as `true` (or `1`). This can obviously be used to loop over parameterizations of a model, different estimation methods, and so on.
+
+As a last little note, there is a feature to limit the maximum number of concurrent runs. This is done by typing
+
+{% highlight bash %}
+#SBATCH --array 1-500%10
+{% endhighlight %}
+
+The number after `%` means that you want to queue the 500 jobs, but it should not start more than 10 at once. This is useful if you want to run a lot of jobs, but you don't want to clog up the queue for everyone else.
