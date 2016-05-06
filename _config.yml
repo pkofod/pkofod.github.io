@@ -1,8 +1,8 @@
 # Site settings
-title: building blogs
+title: building blog
 header-img: img/home-bg.jpg
 email: your-email@yourdomain.com
-description: "Computation, Econometrics, and Make"
+description: "Computation, Econometrics, and Julia"
 baseurl: ""
 url: "http://pkofod.github.io"
 github_username:  pkofod
