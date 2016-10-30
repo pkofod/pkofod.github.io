@@ -6,6 +6,7 @@ description: "Computation, Econometrics, and Julia"
 baseurl: ""
 url: "http://pkofod.github.io"
 github_username:  pkofod
+linkedin_username: pakomo
 
 # Build settings
 markdown: kramdown
